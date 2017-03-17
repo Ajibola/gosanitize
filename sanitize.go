@@ -42,12 +42,13 @@ package gosanitize
 
 import (
 	"bytes"
-	"code.google.com/p/go.net/html"
 	"errors"
 	"io"
 	"net/url"
 	"strings"
 	"unicode/utf8"
+
+	"golang.org/x/net/html"
 )
 
 type sanitizer struct {
